@@ -164,6 +164,659 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Java学习总结Day8" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/09/Java学习总结Day8/">Java学习总结Day8</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/Java学习总结Day8/" class="archive-article-date">
+  	<time datetime="2019-10-08T17:34:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><p>继承是实现多态的基础</p>
+<p>1、引用的多态<br>    父类引用可以指向本类的对象 Animal dog1 = new Animal();<br>    父类引用可以指向子类的对象 Animal dog2 = new Dog();</p>
+<p>2、方法的多态<br>    创建本类对象时，调用的方法为本类的方法<br>    创建子类的对象时，调用的方法为子类对象重写的方法或者继承的方法</p>
+<h2 id="引用类型转换"><a href="#引用类型转换" class="headerlink" title="引用类型转换"></a>引用类型转换</h2><p>1、向上的类型转换（隐式/自动类型转换），是小类型到大类型的转换     —没有风险<br>        Animal animal = dog;    //自动类型提升<br>2、向下类型转换（强制类型转换），是大类型到小类型的转换            —有风险<br>        Dog dog2 = (Dog)animal;    //强制类型转换<br>3、instanceof运算符，用来解决引用对象的类型，避免类型转换的安全性问题</p>
+        
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day8/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java 学习总结</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day8/">康康好的 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java学习总结Day7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/09/Java学习总结Day7/">Java学习总结Day7</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/Java学习总结Day7/" class="archive-article-date">
+  	<time datetime="2019-10-08T17:34:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>Java是单继承</p>
+<p>优点：    子类可以拥有所有父类的属性和方法（不能是private）<br>        轻松实现代码复用</p>
+<p>继承的初始化顺序：<br>    1、先初始化父类在初始化子类<br>    2、先执行初始化对象中的属性，再执行构造方法中的初始化</p>
+<p>语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//class 子类 extends 父类</span><br><span class="line">class Son extends Father</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day7/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java 学习总结</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day7/">康康好的 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java学习总结Day6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/09/Java学习总结Day6/">Java学习总结Day6</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/Java学习总结Day6/" class="archive-article-date">
+  	<time datetime="2019-10-08T17:34:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="成员内部类的使用方法："><a href="#成员内部类的使用方法：" class="headerlink" title="成员内部类的使用方法："></a>成员内部类的使用方法：</h2><p>1、 Inner 类定义在 Outer 类的内部，相当于 Outer 类的一个成员变量的位置，Inner 类可以使用任意访问控制符，如 public 、 protected 、 private 等</p>
+<p>2、 Inner 类中定义的 test() 方法可以直接访问 Outer 类中的数据，而不受访问控制符的影响，如直接访问 Outer 类中的私有属性a</p>
+<p>3、 定义了成员内部类后，必须使用外部类对象来创建内部类对象，而不能直接去 new 一个内部类对象，即：内部类 对象名 = 外部类对象.new 内部类( );</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Outer o = new Outer(); 	//创建外部类Outer的对象，对象名为O</span><br><span class="line"></span><br><span class="line">Inter i = o.new Inter();//使用外部类的对象O创建内部类Inter的对象，对象名为i</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day6/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java 学习总结</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day6/">康康好的 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java学习总结Day5" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/09/Java学习总结Day5/">Java学习总结Day5</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/Java学习总结Day5/" class="archive-article-date">
+  	<time datetime="2019-10-08T17:34:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>面向对象三大特性：封装、继承、多态</p>
+<p>封装：将类的信息隐藏在类中，不允许外部直接操作，只能通过方法来操作信息和访问<br>封装优点：    只能通过规定的方法访问数据<br>            隐藏类的实例细节，方便修改访问</p>
+<p>用户如果想要访问类中的数据（如private修饰），需要创建一个get或者set方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public class Telphone&#123;		//创建一个类</span><br><span class="line">	private float screen;	//private修饰后该属性只能通过此类访问</span><br><span class="line">	private flo cpu;</span><br><span class="line">	</span><br><span class="line">	public float getScreen&#123; //创建一个get方法以供用户放问此类属性</span><br><span class="line">		return screen;</span><br><span class="line">	&#125;</span><br><span class="line">	public void setScreen(float newScreen)&#123;//创建一个set方法给用户给类中属性赋值</span><br><span class="line">		screen = newScreen;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结：    get方法用于获值<br>        set方法用于赋值<br>        这两个方法更符合编程标准易于调试</p>
+<p>eclipse中Source中有个Getters and Setters可以自动生成get和set方法</p>
+<p>Java中包的作用：管理java文件<br>                解决同名文件冲突</p>
+<h2 id="定义包："><a href="#定义包：" class="headerlink" title="定义包："></a>定义包：</h2><pre><code>package 包名</code></pre><p>PS:必须放在Java源程序的第一行，包名可以用“.”隔开<br>    如com.learn.test<br>    命名规则要全小写方便区分其中的类<br>    import.learn.test.Telphone//（Telphone为改包中的类）<br>    import.learn.test.* //加载包中所有的类</p>
+<p>修饰符：    本类    同包    子类    其它<br>private:    *<br>默认：        *        *<br>protected：    *        *        *<br>public：    *        *        *        *</p>
+<h2 id="this关键字："><a href="#this关键字：" class="headerlink" title="this关键字："></a>this关键字：</h2><pre><code>1、关键字代表当前对象
+    this.属性 操作当前对象的属性
+    this.方法 调用当前对象的方法
+2、封装对象属性的时候，经常会使用this关键字</code></pre><h2 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h2><p>问：什么是内部类呢？</p>
+<p>答：内部类（ Inner Class ）就是定义在另外一个类里面的类。与之对应，包含内部类的类被称为外部类。</p>
+<p>问：那为什么要将一个类定义在另一个类里面呢？清清爽爽的独立的一个类多好啊！！</p>
+<p>答：内部类的主要作用如下：</p>
+<ol>
+<li><p>内部类提供了更好的封装，可以把内部类隐藏在外部类之内，不允许同一个包中的其他类访问该类</p>
+</li>
+<li><p>内部类的方法可以直接访问外部类的所有数据，包括私有的数据</p>
+</li>
+<li><p>内部类所实现的功能使用外部类同样可以实现，只是有时使用内部类更方便</p>
+</li>
+</ol>
+<p>问：内部类有几种呢？</p>
+<p>答：内部类可分为以下几种：</p>
+<pre><code>成员内部类
+静态内部类
+方法内部类
+匿名内部类</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java 学习总结</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day5/">康康好的 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java学习总结Day4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/09/Java学习总结Day4/">Java学习总结Day4</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/Java学习总结Day4/" class="archive-article-date">
+  	<time datetime="2019-10-08T17:34:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>对象的特征用属性来表示，对象能做什么（行为）用方法来表示</p>
+<p>实例化：文件信息放到内存当中，new Telphone（）<br>对象：这些信息的集合<br>实例变量：属性</p>
+<p>成员变量可以在整个类中调用—方法外定义—有初始值 0<br>局部变量只能在方法中使用—–方法内定义—无初始值</p>
+<p>PS:    在不同的方法中可以定义同名的局部变量<br>    两个变量重名时，局部变量优先级更高</p>
+        
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day4/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java 学习总结</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day4/">康康好的 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java学习总结Day3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/09/Java学习总结Day3/">Java学习总结Day3</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/Java学习总结Day3/" class="archive-article-date">
+  	<time datetime="2019-10-08T17:33:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="参数列表："><a href="#参数列表：" class="headerlink" title="参数列表："></a>参数列表：</h2><p>传递给方法的参数列表，参数可以有多个，多个参数间以逗号隔开，每个参数由参数类型和参数名组成，以空格隔开 </p>
+<p>根据方法是否带参、是否带返回值，可将方法分为四类：<br>Ø 无参无返回值方法<br>Ø 无参带返回值方法<br>Ø 带参无返回值方法<br>Ø 带参带返回值方法</p>
+        
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day3/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day3/">康康好的 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java学习总结Day2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/09/Java学习总结Day2/">Java学习总结Day2</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/Java学习总结Day2/" class="archive-article-date">
+  	<time datetime="2019-10-08T17:33:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>使用Scanner工具类来获取用户输入的成绩信息<br>该工具类在java.util包中，使用时需要导入<br>步骤：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.import java.util.Scanner;</span><br><span class="line">2.在main方法中Scanner input（命名）= new Scanner（System.in）;//创建一个Scanner对象</span><br><span class="line">3.int a = input.nextInt（）//获取输入数据并保存</span><br><span class="line"></span><br><span class="line">//System.out.print（）不换行； println要换行</span><br></pre></td></tr></table></figure>
+
+<p>Arrays类：    Arryas.sort（数组名）；对该数组进行升序排序；<br>            Arryas.toString（数组名）；将数组转换为字符串</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day2/">康康好的 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java学习总结Day1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/09/Java学习总结Day1/">Java学习总结Day1</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/Java学习总结Day1/" class="archive-article-date">
+  	<time datetime="2019-10-08T17:30:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Java是严格区分大小写的语言，其标识符不能以数字开头</p>
+<p>变量名由多单词组成时，第一个单词的首字母小写，其后单词的首字母大写，俗称骆驼式命名法（也称驼峰命名法），如 myAge</p>
+<p>Java是一种强类型语言 float变量赋值时在数值后添加字母f 如：float height = 175.2f；</p>
+<p>类型转换只能小→大 且int不支持转换为char</p>
+        
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day1/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/09/Java学习总结Day1/">康康好的 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hexo博客搭建的菜鸟流程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -343,6 +996,14 @@ MathJax.Hub.Queue(function() {
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java 学习总结</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

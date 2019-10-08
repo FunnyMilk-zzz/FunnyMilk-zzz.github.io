@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | FunnyMilk-zzz的博客</title>
+  <title>Java学习总结Day8 | FunnyMilk-zzz的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="擅长摸鱼">
-<meta name="keywords" content="非洲程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="FunnyMilk-zzz的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="多态继承是实现多态的基础 1、引用的多态    父类引用可以指向本类的对象 Animal dog1 = new Animal();    父类引用可以指向子类的对象 Animal dog2 = new Dog(); 2、方法的多态    创建本类对象时，调用的方法为本类的方法    创建子类的对象时，调用的方法为子类对象重写的方法或者继承的方法 引用类型转换1、向上的类型转换（隐式/自动类型转换）">
+<meta name="keywords" content="Java 学习总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java学习总结Day8">
+<meta property="og:url" content="http://yoursite.com/2019/10/09/Java学习总结Day8/index.html">
 <meta property="og:site_name" content="FunnyMilk-zzz的博客">
-<meta property="og:description" content="擅长摸鱼">
+<meta property="og:description" content="多态继承是实现多态的基础 1、引用的多态    父类引用可以指向本类的对象 Animal dog1 = new Animal();    父类引用可以指向子类的对象 Animal dog2 = new Dog(); 2、方法的多态    创建本类对象时，调用的方法为本类的方法    创建子类的对象时，调用的方法为子类对象重写的方法或者继承的方法 引用类型转换1、向上的类型转换（隐式/自动类型转换）">
 <meta property="og:locale" content="cn">
+<meta property="og:updated_time" content="2019-10-08T18:00:11.618Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FunnyMilk-zzz的博客">
-<meta name="twitter:description" content="擅长摸鱼">
+<meta name="twitter:title" content="Java学习总结Day8">
+<meta name="twitter:description" content="多态继承是实现多态的基础 1、引用的多态    父类引用可以指向本类的对象 Animal dog1 = new Animal();    父类引用可以指向子类的对象 Animal dog2 = new Dog(); 2、方法的多态    创建本类对象时，调用的方法为本类的方法    创建子类的对象时，调用的方法为子类对象重写的方法或者继承的方法 引用类型转换1、向上的类型转换（隐式/自动类型转换）">
   
     <link rel="alternative" href="/atom.xml" title="FunnyMilk-zzz的博客" type="application/atom+xml">
   
@@ -162,36 +163,82 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Java学习总结Day8" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Java学习总结Day8
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/09/Java学习总结Day8/" class="archive-article-date">
+
+        
+        <a href="/2019/10/09/Java学习总结Day8/" class="archive-article-date">
   	<time datetime="2019-10-08T17:34:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/09/Java学习总结Day8/">Java学习总结Day8</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><p>继承是实现多态的基础</p>
+<p>1、引用的多态<br>    父类引用可以指向本类的对象 Animal dog1 = new Animal();<br>    父类引用可以指向子类的对象 Animal dog2 = new Dog();</p>
+<p>2、方法的多态<br>    创建本类对象时，调用的方法为本类的方法<br>    创建子类的对象时，调用的方法为子类对象重写的方法或者继承的方法</p>
+<h2 id="引用类型转换"><a href="#引用类型转换" class="headerlink" title="引用类型转换"></a>引用类型转换</h2><p>1、向上的类型转换（隐式/自动类型转换），是小类型到大类型的转换     —没有风险<br>        Animal animal = dog;    //自动类型提升<br>2、向下类型转换（强制类型转换），是大类型到小类型的转换            —有风险<br>        Dog dog2 = (Dog)animal;    //强制类型转换<br>3、instanceof运算符，用来解决引用对象的类型，避免类型转换的安全性问题</p>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<h2 id="抽象类abstract"><a href="#抽象类abstract" class="headerlink" title="抽象类abstract"></a>抽象类abstract</h2><p>作用：不关注子类的实现，达到你是要约束子类必须要有那些属性</p>
+<h2 id="接口：给接口命名是前面加上一个大写的I"><a href="#接口：给接口命名是前面加上一个大写的I" class="headerlink" title="接口：给接口命名是前面加上一个大写的I !!!!!!"></a>接口：给接口命名是前面加上一个大写的I !!!!!!</h2><p>接口可以理解为一种特殊的类，由全局常量和公共的抽象方法所组成<br>使用interface关键字定义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[修饰符] interface 接口名 [extends 父接口1，父接口2，父接口n]//中括号内容可选</span><br><span class="line">&#123;</span><br><span class="line">	零到多个常量定义		//系统会自动加上public static final修饰符</span><br><span class="line">	零到多个抽象方法的定义	//系统会加上public abstract修饰符</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一个类可以实现一个或多个接口弥补Java中一对一继承的缺陷</p>
+<p>继承父类实现接口的语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[修饰符] class 类名 extends 父类 implements 接口1，接口2，接口n</span><br><span class="line">&#123;</span><br><span class="line">	类体部分//如果继承抽象类，需要实现其中的抽象方法；接口中的抽象方法</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="UML-（统一建模语言-标准建模语言）"><a href="#UML-（统一建模语言-标准建模语言）" class="headerlink" title="UML （统一建模语言/标准建模语言）"></a>UML （统一建模语言/标准建模语言）</h2><p>概念：支持模型化和软件系统开发的图形化语言<br>目的：为软件开发的所有阶段提供模型化和可视化支持</p>
+<h3 id="常用的UML图"><a href="#常用的UML图" class="headerlink" title="常用的UML图"></a>常用的UML图</h3><p>序列图：用于按照交互发生的一系列顺序显示对象之间的这些交互<br>类图：描述业务逻辑和所有支持的结构一同被用于定义全部的代码结构</p>
+<p>PowerDesign可以根据UML图自动生成Java代码</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>还真有大佬打赏？<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/xiong.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/xiong.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -203,312 +250,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/09/Java学习总结Day8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/09/Java学习总结Day7/" class="archive-article-date">
-  	<time datetime="2019-10-08T17:34:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/09/Java学习总结Day7/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java学习总结Day7</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/09/Java学习总结Day7/">Java学习总结Day7</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java 学习总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/09/Java学习总结Day6/" class="archive-article-date">
-  	<time datetime="2019-10-08T17:34:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/09/Java学习总结Day6/">Java学习总结Day6</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java 学习总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/09/Java学习总结Day5/" class="archive-article-date">
-  	<time datetime="2019-10-08T17:34:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/09/Java学习总结Day5/">Java学习总结Day5</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java 学习总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/09/Java学习总结Day4/" class="archive-article-date">
-  	<time datetime="2019-10-08T17:34:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/09/Java学习总结Day4/">Java学习总结Day4</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java 学习总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/09/Java学习总结Day3/" class="archive-article-date">
-  	<time datetime="2019-10-08T17:33:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/09/Java学习总结Day3/">Java学习总结Day3</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/09/Java学习总结Day2/" class="archive-article-date">
-  	<time datetime="2019-10-08T17:33:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/09/Java学习总结Day2/">Java学习总结Day2</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/09/Java学习总结Day1/" class="archive-article-date">
-  	<time datetime="2019-10-08T17:30:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/09/Java学习总结Day1/">Java学习总结Day1</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/25/hexo博客搭建的菜鸟流程/" class="archive-article-date">
-  	<time datetime="2019-09-25T13:49:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/hexo博客搭建的菜鸟流程/">hexo博客搭建的菜鸟流程</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -531,8 +372,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
