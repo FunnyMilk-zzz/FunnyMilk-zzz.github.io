@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java学习总结Day7 | FunnyMilk-zzz的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="继承Java是单继承 优点：    子类可以拥有所有父类的属性和方法（不能是private）        轻松实现代码复用 继承的初始化顺序：    1、先初始化父类在初始化子类    2、先执行初始化对象中的属性，再执行构造方法中的初始化 语法 12//class 子类 extends 父类class Son extends Father">
+  <meta name="description" content="继承Java是单继承 优点：&amp;#160; &amp;#160; &amp;#160; &amp;#160;子类可以拥有所有父类的属性和方法（不能是private）&amp;#160; &amp;#160; &amp;#160; &amp;#160;轻松实现代码复用 继承的初始化顺序：    &amp;#160; &amp;#160; &amp;#160; &amp;#160;1、先初始化父类在初始化子类    &amp;#160; &amp;#160; &amp;#160; &amp;#160;2、先执行初始化对象">
 <meta name="keywords" content="Java 学习总结">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java学习总结Day7">
 <meta property="og:url" content="http://yoursite.com/2019/10/09/Java学习总结Day7/index.html">
 <meta property="og:site_name" content="FunnyMilk-zzz的博客">
-<meta property="og:description" content="继承Java是单继承 优点：    子类可以拥有所有父类的属性和方法（不能是private）        轻松实现代码复用 继承的初始化顺序：    1、先初始化父类在初始化子类    2、先执行初始化对象中的属性，再执行构造方法中的初始化 语法 12//class 子类 extends 父类class Son extends Father">
+<meta property="og:description" content="继承Java是单继承 优点：&amp;#160; &amp;#160; &amp;#160; &amp;#160;子类可以拥有所有父类的属性和方法（不能是private）&amp;#160; &amp;#160; &amp;#160; &amp;#160;轻松实现代码复用 继承的初始化顺序：    &amp;#160; &amp;#160; &amp;#160; &amp;#160;1、先初始化父类在初始化子类    &amp;#160; &amp;#160; &amp;#160; &amp;#160;2、先执行初始化对象">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-10-08T17:49:03.796Z">
+<meta property="og:updated_time" content="2019-10-08T18:02:47.404Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习总结Day7">
-<meta name="twitter:description" content="继承Java是单继承 优点：    子类可以拥有所有父类的属性和方法（不能是private）        轻松实现代码复用 继承的初始化顺序：    1、先初始化父类在初始化子类    2、先执行初始化对象中的属性，再执行构造方法中的初始化 语法 12//class 子类 extends 父类class Son extends Father">
+<meta name="twitter:description" content="继承Java是单继承 优点：&amp;#160; &amp;#160; &amp;#160; &amp;#160;子类可以拥有所有父类的属性和方法（不能是private）&amp;#160; &amp;#160; &amp;#160; &amp;#160;轻松实现代码复用 继承的初始化顺序：    &amp;#160; &amp;#160; &amp;#160; &amp;#160;1、先初始化父类在初始化子类    &amp;#160; &amp;#160; &amp;#160; &amp;#160;2、先执行初始化对象">
   
     <link rel="alternative" href="/atom.xml" title="FunnyMilk-zzz的博客" type="application/atom+xml">
   
@@ -184,16 +184,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>Java是单继承</p>
-<p>优点：    子类可以拥有所有父类的属性和方法（不能是private）<br>        轻松实现代码复用</p>
-<p>继承的初始化顺序：<br>    1、先初始化父类在初始化子类<br>    2、先执行初始化对象中的属性，再执行构造方法中的初始化</p>
+<p>优点：<br>&#160; &#160; &#160; &#160;子类可以拥有所有父类的属性和方法（不能是private）<br>&#160; &#160; &#160; &#160;轻松实现代码复用</p>
+<p>继承的初始化顺序：<br>    &#160; &#160; &#160; &#160;1、先初始化父类在初始化子类<br>    &#160; &#160; &#160; &#160;2、先执行初始化对象中的属性，再执行构造方法中的初始化</p>
 <p>语法</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//class 子类 extends 父类</span><br><span class="line">class Son extends Father</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
 
 <h2 id="Java中的方法重写"><a href="#Java中的方法重写" class="headerlink" title="Java中的方法重写"></a>Java中的方法重写</h2><p>如果子类对父类方法不满意时可以对方法进行重写，调用时就会优先调用子类的方法</p>
-<p>语法规则<br>    a.返回值类型<br>    b.方法名<br>    c.参数类型及个数</p>
-<h2 id="final关键字"><a href="#final关键字" class="headerlink" title="final关键字"></a>final关键字</h2><p>使用final关键字可以修饰类、方法、属性、变量<br>类：不可被继承<br>方法：不允许被重写<br>属性：不会进行自动初始化或在构造方法中赋值<br>变量：只能在声明变量时赋一次值</p>
+<p>语法规则<br>    &#160; &#160; &#160; &#160;a.返回值类型<br>    &#160; &#160; &#160; &#160;b.方法名<br>    &#160; &#160; &#160; &#160;c.参数类型及个数</p>
+<h2 id="final关键字"><a href="#final关键字" class="headerlink" title="final关键字"></a>final关键字</h2><p>使用final关键字可以修饰类、方法、属性、变量<br>&#160; &#160; &#160; &#160;类：不可被继承<br>&#160; &#160; &#160; &#160;方法：不允许被重写<br>&#160; &#160; &#160; &#160;属性：不会进行自动初始化或在构造方法中赋值<br>&#160; &#160; &#160; &#160;变量：只能在声明变量时赋一次值</p>
 <h2 id="super关键字"><a href="#super关键字" class="headerlink" title="super关键字"></a>super关键字</h2><p>在对象的内部使用，可以代表父类对象<br>1、访问父类的属性</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">super.age</span><br></pre></td></tr></table></figure>
 

@@ -185,9 +185,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><p>继承是实现多态的基础</p>
-<p>1、引用的多态<br>    父类引用可以指向本类的对象 Animal dog1 = new Animal();<br>    父类引用可以指向子类的对象 Animal dog2 = new Dog();</p>
-<p>2、方法的多态<br>    创建本类对象时，调用的方法为本类的方法<br>    创建子类的对象时，调用的方法为子类对象重写的方法或者继承的方法</p>
-<h2 id="引用类型转换"><a href="#引用类型转换" class="headerlink" title="引用类型转换"></a>引用类型转换</h2><p>1、向上的类型转换（隐式/自动类型转换），是小类型到大类型的转换     —没有风险<br>        Animal animal = dog;    //自动类型提升<br>2、向下类型转换（强制类型转换），是大类型到小类型的转换            —有风险<br>        Dog dog2 = (Dog)animal;    //强制类型转换<br>3、instanceof运算符，用来解决引用对象的类型，避免类型转换的安全性问题</p>
+<p>1、引用的多态<br>    &#160; &#160; &#160; &#160;父类引用可以指向本类的对象 Animal dog1 = new Animal();<br>    &#160; &#160; &#160; &#160;父类引用可以指向子类的对象 Animal dog2 = new Dog();</p>
+<p>2、方法的多态<br>    &#160; &#160; &#160; &#160;创建本类对象时，调用的方法为本类的方法<br>    &#160; &#160; &#160; &#160;创建子类的对象时，调用的方法为子类对象重写的方法或者继承的方法</p>
+<h2 id="引用类型转换"><a href="#引用类型转换" class="headerlink" title="引用类型转换"></a>引用类型转换</h2><p>1、向上的类型转换（隐式/自动类型转换），是小类型到大类型的转换     —没有风险<br>        &#160; &#160; &#160; &#160;Animal animal = dog;    //自动类型提升<br>2、向下类型转换（强制类型转换），是大类型到小类型的转换            —有风险<br>        &#160; &#160; &#160; &#160;Dog dog2 = (Dog)animal;    //强制类型转换<br>3、instanceof运算符，用来解决引用对象的类型，避免类型转换的安全性问题</p>
         
           <a class="article-more-a" href="/2019/10/09/Java学习总结Day8/#more">more >></a>
         
@@ -264,8 +264,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>Java是单继承</p>
-<p>优点：    子类可以拥有所有父类的属性和方法（不能是private）<br>        轻松实现代码复用</p>
-<p>继承的初始化顺序：<br>    1、先初始化父类在初始化子类<br>    2、先执行初始化对象中的属性，再执行构造方法中的初始化</p>
+<p>优点：<br>&#160; &#160; &#160; &#160;子类可以拥有所有父类的属性和方法（不能是private）<br>&#160; &#160; &#160; &#160;轻松实现代码复用</p>
+<p>继承的初始化顺序：<br>    &#160; &#160; &#160; &#160;1、先初始化父类在初始化子类<br>    &#160; &#160; &#160; &#160;2、先执行初始化对象中的属性，再执行构造方法中的初始化</p>
 <p>语法</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//class 子类 extends 父类</span><br><span class="line">class Son extends Father</span><br></pre></td></tr></table></figure>
         
@@ -425,7 +425,7 @@
         <h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>面向对象三大特性：封装、继承、多态</p>
 <p>封装：将类的信息隐藏在类中，不允许外部直接操作，只能通过方法来操作信息和访问<br>封装优点：    只能通过规定的方法访问数据<br>            隐藏类的实例细节，方便修改访问</p>
 <p>用户如果想要访问类中的数据（如private修饰），需要创建一个get或者set方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public class Telphone&#123;		//创建一个类</span><br><span class="line">	private float screen;	//private修饰后该属性只能通过此类访问</span><br><span class="line">	private flo cpu;</span><br><span class="line">	</span><br><span class="line">	public float getScreen&#123; //创建一个get方法以供用户放问此类属性</span><br><span class="line">		return screen;</span><br><span class="line">	&#125;</span><br><span class="line">	public void setScreen(float newScreen)&#123;//创建一个set方法给用户给类中属性赋值</span><br><span class="line">		screen = newScreen;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public class Telphone&#123;		//创建一个类</span><br><span class="line">	private float screen;	//private修饰后该属性只能通过此类访问</span><br><span class="line">	private flo cpu;</span><br><span class="line">	</span><br><span class="line">	public float getScreen&#123; //创建一个get方法以供用户放问此类属性</span><br><span class="line">		return screen;</span><br><span class="line">	&#125;</span><br><span class="line">	public void setScreen(float newScreen)&#123;//创建一个set方法给用户给类中属性赋值</span><br><span class="line">		screen = newScreen;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>总结：    get方法用于获值<br>        set方法用于赋值<br>        这两个方法更符合编程标准易于调试</p>
 <p>eclipse中Source中有个Getters and Setters可以自动生成get和set方法</p>
