@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java学习总结Day5 | FunnyMilk-zzz的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="面向对象面向对象三大特性：封装、继承、多态 封装：将类的信息隐藏在类中，不允许外部直接操作，只能通过方法来操作信息和访问封装优点：    只能通过规定的方法访问数据            隐藏类的实例细节，方便修改访问 用户如果想要访问类中的数据（如private修饰），需要创建一个get或者set方法 1234567891011121314151617&amp;lt;!-- more --&amp;gt;pub">
+  <meta name="description" content="面向对象面向对象三大特性：封装、继承、多态 封装：将类的信息隐藏在类中，不允许外部直接操作，只能通过方法来操作信息和访问封装优点：    只能通过规定的方法访问数据            隐藏类的实例细节，方便修改访问 用户如果想要访问类中的数据（如private修饰），需要创建一个get或者set方法 123&amp;lt;!-- more --&amp;gt;  public class Telphone{">
 <meta name="keywords" content="Java 学习总结">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java学习总结Day5">
 <meta property="og:url" content="http://yoursite.com/2019/10/09/Java学习总结Day5/index.html">
 <meta property="og:site_name" content="FunnyMilk-zzz的博客">
-<meta property="og:description" content="面向对象面向对象三大特性：封装、继承、多态 封装：将类的信息隐藏在类中，不允许外部直接操作，只能通过方法来操作信息和访问封装优点：    只能通过规定的方法访问数据            隐藏类的实例细节，方便修改访问 用户如果想要访问类中的数据（如private修饰），需要创建一个get或者set方法 1234567891011121314151617&amp;lt;!-- more --&amp;gt;pub">
+<meta property="og:description" content="面向对象面向对象三大特性：封装、继承、多态 封装：将类的信息隐藏在类中，不允许外部直接操作，只能通过方法来操作信息和访问封装优点：    只能通过规定的方法访问数据            隐藏类的实例细节，方便修改访问 用户如果想要访问类中的数据（如private修饰），需要创建一个get或者set方法 123&amp;lt;!-- more --&amp;gt;  public class Telphone{">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-10-09T09:00:24.508Z">
+<meta property="og:updated_time" content="2019-10-09T09:02:25.386Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习总结Day5">
-<meta name="twitter:description" content="面向对象面向对象三大特性：封装、继承、多态 封装：将类的信息隐藏在类中，不允许外部直接操作，只能通过方法来操作信息和访问封装优点：    只能通过规定的方法访问数据            隐藏类的实例细节，方便修改访问 用户如果想要访问类中的数据（如private修饰），需要创建一个get或者set方法 1234567891011121314151617&amp;lt;!-- more --&amp;gt;pub">
+<meta name="twitter:description" content="面向对象面向对象三大特性：封装、继承、多态 封装：将类的信息隐藏在类中，不允许外部直接操作，只能通过方法来操作信息和访问封装优点：    只能通过规定的方法访问数据            隐藏类的实例细节，方便修改访问 用户如果想要访问类中的数据（如private修饰），需要创建一个get或者set方法 123&amp;lt;!-- more --&amp;gt;  public class Telphone{">
   
     <link rel="alternative" href="/atom.xml" title="FunnyMilk-zzz的博客" type="application/atom+xml">
   
@@ -186,34 +186,70 @@
         <h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>面向对象三大特性：封装、继承、多态</p>
 <p>封装：将类的信息隐藏在类中，不允许外部直接操作，只能通过方法来操作信息和访问<br>封装优点：    只能通过规定的方法访问数据<br>            隐藏类的实例细节，方便修改访问</p>
 <p>用户如果想要访问类中的数据（如private修饰），需要创建一个get或者set方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public class Telphone&#123;		//创建一个类</span><br><span class="line">	private float screen;	//private修饰后该属性只能通过此类访问</span><br><span class="line">	private flo cpu;</span><br><span class="line">	</span><br><span class="line">	public float getScreen&#123; //创建一个get方法以供用户放问此类属性</span><br><span class="line">		return screen;</span><br><span class="line">	&#125;</span><br><span class="line">	public void setScreen(float newScreen)&#123;//创建一个set方法给用户给类中属性赋值</span><br><span class="line">		screen = newScreen;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
 
-<p>总结：    get方法用于获值<br>        set方法用于赋值<br>        这两个方法更符合编程标准易于调试</p>
-<p>eclipse中Source中有个Getters and Setters可以自动生成get和set方法</p>
-<p>Java中包的作用：管理java文件<br>                解决同名文件冲突</p>
-<h2 id="定义包："><a href="#定义包：" class="headerlink" title="定义包："></a>定义包：</h2><pre><code>package 包名</code></pre><p>PS:必须放在Java源程序的第一行，包名可以用“.”隔开<br>    如com.learn.test<br>    命名规则要全小写方便区分其中的类<br>    import.learn.test.Telphone//（Telphone为改包中的类）<br>    import.learn.test.* //加载包中所有的类</p>
-<p>修饰符：    本类    同包    子类    其它<br>private:    *<br>默认：        *        *<br>protected：    *        *        *<br>public：    *        *        *        *</p>
-<h2 id="this关键字："><a href="#this关键字：" class="headerlink" title="this关键字："></a>this关键字：</h2><pre><code>1、关键字代表当前对象
-    this.属性 操作当前对象的属性
-    this.方法 调用当前对象的方法
-2、封装对象属性的时候，经常会使用this关键字</code></pre><h2 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h2><p>问：什么是内部类呢？</p>
-<p>答：内部类（ Inner Class ）就是定义在另外一个类里面的类。与之对应，包含内部类的类被称为外部类。</p>
-<p>问：那为什么要将一个类定义在另一个类里面呢？清清爽爽的独立的一个类多好啊！！</p>
-<p>答：内部类的主要作用如下：</p>
-<ol>
-<li><p>内部类提供了更好的封装，可以把内部类隐藏在外部类之内，不允许同一个包中的其他类访问该类</p>
-</li>
-<li><p>内部类的方法可以直接访问外部类的所有数据，包括私有的数据</p>
-</li>
-<li><p>内部类所实现的功能使用外部类同样可以实现，只是有时使用内部类更方便</p>
-</li>
-</ol>
-<p>问：内部类有几种呢？</p>
-<p>答：内部类可分为以下几种：</p>
-<pre><code>成员内部类
-静态内部类
-方法内部类
-匿名内部类</code></pre>
+<p>public class Telphone{        //创建一个类<br>    private float screen;    //private修饰后该属性只能通过此类访问<br>    private flo cpu;</p>
+<pre><code>public float getScreen{ //创建一个get方法以供用户放问此类属性
+    return screen;
+}
+public void setScreen(float newScreen){//创建一个set方法给用户给类中属性赋值
+    screen = newScreen;
+
+}</code></pre><p>}</p>
+<pre><code>总结：    get方法用于获值
+        set方法用于赋值
+        这两个方法更符合编程标准易于调试
+
+eclipse中Source中有个Getters and Setters可以自动生成get和set方法
+
+Java中包的作用：管理java文件
+                解决同名文件冲突
+
+## 定义包：
+        package 包名
+PS:必须放在Java源程序的第一行，包名可以用“.”隔开
+    如com.learn.test
+    命名规则要全小写方便区分其中的类
+    import.learn.test.Telphone//（Telphone为改包中的类）
+    import.learn.test.* //加载包中所有的类
+
+
+修饰符：    本类    同包    子类    其它
+private:    *        
+默认：        *        *
+protected：    *        *        *    
+public：    *        *        *        *
+
+## this关键字：
+    1、关键字代表当前对象
+        this.属性 操作当前对象的属性
+        this.方法 调用当前对象的方法
+    2、封装对象属性的时候，经常会使用this关键字
+
+## 内部类
+问：什么是内部类呢？
+
+答：内部类（ Inner Class ）就是定义在另外一个类里面的类。与之对应，包含内部类的类被称为外部类。
+
+问：那为什么要将一个类定义在另一个类里面呢？清清爽爽的独立的一个类多好啊！！
+
+答：内部类的主要作用如下：
+
+1. 内部类提供了更好的封装，可以把内部类隐藏在外部类之内，不允许同一个包中的其他类访问该类
+
+2. 内部类的方法可以直接访问外部类的所有数据，包括私有的数据
+
+3. 内部类所实现的功能使用外部类同样可以实现，只是有时使用内部类更方便
+
+问：内部类有几种呢？
+
+答：内部类可分为以下几种：
+
+        成员内部类
+        静态内部类
+        方法内部类
+        匿名内部类
+</code></pre>
       
 
       
