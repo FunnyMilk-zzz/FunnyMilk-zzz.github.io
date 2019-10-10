@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Java学习总结Day4 | FunnyMilk-zzz的博客</title>
+  <title>Java学习总结Day9 | FunnyMilk-zzz的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="对象对象的特征用属性来表示，对象能做什么（行为）用方法来表示 实例化：文件信息放到内存当中，new Telphone（）对象：这些信息的集合实例变量：属性 成员变量可以在整个类中调用—方法外定义—有初始值 0局部变量只能在方法中使用—–方法内定义—无初始值 PS:    在不同的方法中可以定义同名的局部变量    两个变量重名时，局部变量优先级更高">
+  <meta name="description" content="Java异常Java中使用try-catch以及try-catch-finally来捕获异常 12345678910try&amp;#123;	System.out.print(&amp;quot;请输入年龄&amp;quot;)			//一些会抛出异常的方法	Scanner input = new Scnner(System.in);	int age = input.nextInt();	System.out.prin">
 <meta name="keywords" content="Java 学习总结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java学习总结Day4">
-<meta property="og:url" content="http://yoursite.com/2019/10/09/Java学习总结Day4/index.html">
+<meta property="og:title" content="Java学习总结Day9">
+<meta property="og:url" content="http://yoursite.com/2019/10/10/Java学习总结Day9/index.html">
 <meta property="og:site_name" content="FunnyMilk-zzz的博客">
-<meta property="og:description" content="对象对象的特征用属性来表示，对象能做什么（行为）用方法来表示 实例化：文件信息放到内存当中，new Telphone（）对象：这些信息的集合实例变量：属性 成员变量可以在整个类中调用—方法外定义—有初始值 0局部变量只能在方法中使用—–方法内定义—无初始值 PS:    在不同的方法中可以定义同名的局部变量    两个变量重名时，局部变量优先级更高">
+<meta property="og:description" content="Java异常Java中使用try-catch以及try-catch-finally来捕获异常 12345678910try&amp;#123;	System.out.print(&amp;quot;请输入年龄&amp;quot;)			//一些会抛出异常的方法	Scanner input = new Scnner(System.in);	int age = input.nextInt();	System.out.prin">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-10-08T17:43:55.799Z">
+<meta property="og:updated_time" content="2019-10-10T15:09:46.376Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java学习总结Day4">
-<meta name="twitter:description" content="对象对象的特征用属性来表示，对象能做什么（行为）用方法来表示 实例化：文件信息放到内存当中，new Telphone（）对象：这些信息的集合实例变量：属性 成员变量可以在整个类中调用—方法外定义—有初始值 0局部变量只能在方法中使用—–方法内定义—无初始值 PS:    在不同的方法中可以定义同名的局部变量    两个变量重名时，局部变量优先级更高">
+<meta name="twitter:title" content="Java学习总结Day9">
+<meta name="twitter:description" content="Java异常Java中使用try-catch以及try-catch-finally来捕获异常 12345678910try&amp;#123;	System.out.print(&amp;quot;请输入年龄&amp;quot;)			//一些会抛出异常的方法	Scanner input = new Scnner(System.in);	int age = input.nextInt();	System.out.prin">
   
     <link rel="alternative" href="/atom.xml" title="FunnyMilk-zzz的博客" type="application/atom+xml">
   
@@ -163,36 +163,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Java学习总结Day4" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java学习总结Day9" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Java学习总结Day4
+      Java学习总结Day9
     </h1>
   
 
         
-        <a href="/2019/10/09/Java学习总结Day4/" class="archive-article-date">
-  	<time datetime="2019-10-08T17:34:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+        <a href="/2019/10/10/Java学习总结Day9/" class="archive-article-date">
+  	<time datetime="2019-10-10T15:09:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>对象的特征用属性来表示，对象能做什么（行为）用方法来表示</p>
-<p>实例化：文件信息放到内存当中，new Telphone（）<br>对象：这些信息的集合<br>实例变量：属性</p>
-<p>成员变量可以在整个类中调用—方法外定义—有初始值 0<br>局部变量只能在方法中使用—–方法内定义—无初始值</p>
-<p>PS:    在不同的方法中可以定义同名的局部变量<br>    两个变量重名时，局部变量优先级更高</p>
-<a id="more"></a>
+        <h2 id="Java异常"><a href="#Java异常" class="headerlink" title="Java异常"></a>Java异常</h2><p>Java中使用try-catch以及try-catch-finally来捕获异常</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">try&#123;</span><br><span class="line">	System.out.print(&quot;请输入年龄&quot;)			//一些会抛出异常的方法</span><br><span class="line">	Scanner input = new Scnner(System.in);</span><br><span class="line">	int age = input.nextInt();</span><br><span class="line">	System.out.println(&quot;十年后的你&quot;+(age+10)+&quot;岁&quot;)</span><br><span class="line">&#125;catch(InputMismatchException e)&#123;</span><br><span class="line">	System.out.println(&quot;你应该输入整数！&quot;)	//处理该异常的代码块</span><br><span class="line">&#125;finally&#123;								</span><br><span class="line">System.out.println(&quot;程序运行结束&quot;)			//最终要执行的一些代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>定义了有参的构造方法以后，系统就不会自动定义无参的构造方法，此时不可调用无参构造方法<br>构造方法的重载：方法名相同，但参数不同的多个方法会自动根据不同的参数选择相应的方法<br>构造方法不仅可以给对象的属性赋值，还可以保证给对象的属性赋一个合理的值</p>
-<p>static修饰的成员为静态成员或类成员，属于整个类所有—被类中的所有对象共享</p>
-<p>static方法中想要调用其它方法中变量有两种情况<br>1、静态变量（或方法）可以直接调用<br>2、非静态变量（或方法）需要通过对象来调用<br>PS：普通成员方法就可以调用同类的静态和非静态变量</p>
-<p>静态初始化块<br>静态初始化块只在类加载时执行，且只会执行一次，同时静态初始化块只能给静态变量赋值，不能初始化普通的成员变量。<br>而且静态初始化块是最先执行的</p>
+<p>PS：<br>1、多重catch块的顺序：先小后大，先子类后父类<br>2、e.printStackTrace();//用于打印异常的具体信息</p>
+<p>实际运用总结：<br>    1、处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理<br>    2、在多重catch块后面加上一个catch(Exception)来处理可能会被遗漏的异常<br>    3、对于不确定的代码，也可以加上try-catch处理潜在的异常<br>    4、尽量去处理异常，切忌只是简单的调用printStackTrace()去打印输出<br>    5、具体如何处理异常，要根据不同的业务需求和异常类型去决定<br>    6、尽量添加finally语句块去释放占用的资源，尤其是在有网络链接和连接数据库的情况</p>
+<h2 id="异常的抛出"><a href="#异常的抛出" class="headerlink" title="异常的抛出"></a>异常的抛出</h2><pre><code>throw ：将产生的异常抛出（动作）
+throws ：声明将要抛出何种类型的异常（声明）</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public void 方法名（参数列表）throws 异常列表</span><br><span class="line">&#123;</span><br><span class="line">	//调用会抛出异常的方法或者</span><br><span class="line">	//throw new Exception();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class 自定义异常类 exends 异常类型&#123;</span><br><span class="line">	//内容</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -293,7 +293,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/09/Java学习总结Day4/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/10/Java学习总结Day9/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -307,18 +307,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/09/Java学习总结Day5/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Java学习总结Day5
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/09/Java学习总结Day3/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java学习总结Day3</div>
+    <a href="/2019/10/10/模擬借書系統/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">模擬借書系統</div>
       <i class="icon-circle-right"></i>
     </a>
   
