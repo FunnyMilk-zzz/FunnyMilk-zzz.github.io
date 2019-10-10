@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="FunnyMilk-zzz的博客">
 <meta property="og:description" content="Java异常Java中使用try-catch以及try-catch-finally来捕获异常 12345678910try&amp;#123;	System.out.print(&amp;quot;请输入年龄&amp;quot;)			//一些会抛出异常的方法	Scanner input = new Scnner(System.in);	int age = input.nextInt();	System.out.prin">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-10-10T15:09:46.376Z">
+<meta property="og:updated_time" content="2019-10-10T15:14:38.442Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习总结Day9">
 <meta name="twitter:description" content="Java异常Java中使用try-catch以及try-catch-finally来捕获异常 12345678910try&amp;#123;	System.out.print(&amp;quot;请输入年龄&amp;quot;)			//一些会抛出异常的方法	Scanner input = new Scnner(System.in);	int age = input.nextInt();	System.out.prin">
@@ -186,10 +186,11 @@
         <h2 id="Java异常"><a href="#Java异常" class="headerlink" title="Java异常"></a>Java异常</h2><p>Java中使用try-catch以及try-catch-finally来捕获异常</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">try&#123;</span><br><span class="line">	System.out.print(&quot;请输入年龄&quot;)			//一些会抛出异常的方法</span><br><span class="line">	Scanner input = new Scnner(System.in);</span><br><span class="line">	int age = input.nextInt();</span><br><span class="line">	System.out.println(&quot;十年后的你&quot;+(age+10)+&quot;岁&quot;)</span><br><span class="line">&#125;catch(InputMismatchException e)&#123;</span><br><span class="line">	System.out.println(&quot;你应该输入整数！&quot;)	//处理该异常的代码块</span><br><span class="line">&#125;finally&#123;								</span><br><span class="line">System.out.println(&quot;程序运行结束&quot;)			//最终要执行的一些代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>
 <p>PS：<br>1、多重catch块的顺序：先小后大，先子类后父类<br>2、e.printStackTrace();//用于打印异常的具体信息</p>
 <p>实际运用总结：<br>    1、处理运行时异常时，采用逻辑去合理规避同时辅助try-catch处理<br>    2、在多重catch块后面加上一个catch(Exception)来处理可能会被遗漏的异常<br>    3、对于不确定的代码，也可以加上try-catch处理潜在的异常<br>    4、尽量去处理异常，切忌只是简单的调用printStackTrace()去打印输出<br>    5、具体如何处理异常，要根据不同的业务需求和异常类型去决定<br>    6、尽量添加finally语句块去释放占用的资源，尤其是在有网络链接和连接数据库的情况</p>
-<h2 id="异常的抛出"><a href="#异常的抛出" class="headerlink" title="异常的抛出"></a>异常的抛出</h2><pre><code>throw ：将产生的异常抛出（动作）
-throws ：声明将要抛出何种类型的异常（声明）</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public void 方法名（参数列表）throws 异常列表</span><br><span class="line">&#123;</span><br><span class="line">	//调用会抛出异常的方法或者</span><br><span class="line">	//throw new Exception();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="异常的抛出"><a href="#异常的抛出" class="headerlink" title="异常的抛出"></a>异常的抛出</h2><p>throw ：将产生的异常抛出（动作）<br>throws ：声明将要抛出何种类型的异常（声明）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public void 方法名（参数列表）throws 异常列表</span><br><span class="line">&#123;</span><br><span class="line">	//调用会抛出异常的方法或者</span><br><span class="line">	//throw new Exception();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class 自定义异常类 exends 异常类型&#123;</span><br><span class="line">	//内容</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
