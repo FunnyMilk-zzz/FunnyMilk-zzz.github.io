@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>FunnyMilk-zzz的博客</title>
+  <title>Java学习总结Day10 | FunnyMilk-zzz的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="擅长摸鱼">
-<meta name="keywords" content="非洲程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="FunnyMilk-zzz的博客">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+  <meta name="description" content="String在Java~String作为对象创建后则不能被修改，它是不可变的，所谓的修改其实就是创建了新的对象，他们所指向的内存空间是不同的  ![avatar](http://img.mukewang.com/53d9f7d200010bb007780366.jpg)">
+<meta name="keywords" content="Java 学习总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java学习总结Day10">
+<meta property="og:url" content="http://yoursite.com/2019/10/10/Java学习总结Day10/index.html">
 <meta property="og:site_name" content="FunnyMilk-zzz的博客">
-<meta property="og:description" content="擅长摸鱼">
+<meta property="og:description" content="String在Java~String作为对象创建后则不能被修改，它是不可变的，所谓的修改其实就是创建了新的对象，他们所指向的内存空间是不同的  ![avatar](http://img.mukewang.com/53d9f7d200010bb007780366.jpg)">
 <meta property="og:locale" content="cn">
+<meta property="og:updated_time" content="2019-10-10T15:56:01.638Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FunnyMilk-zzz的博客">
-<meta name="twitter:description" content="擅长摸鱼">
+<meta name="twitter:title" content="Java学习总结Day10">
+<meta name="twitter:description" content="String在Java~String作为对象创建后则不能被修改，它是不可变的，所谓的修改其实就是创建了新的对象，他们所指向的内存空间是不同的  ![avatar](http://img.mukewang.com/53d9f7d200010bb007780366.jpg)">
   
     <link rel="alternative" href="/atom.xml" title="FunnyMilk-zzz的博客" type="application/atom+xml">
   
@@ -162,37 +163,70 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Java学习总结Day1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Java学习总结Day10" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/09/Java学习总结Day1/">Java学习总结Day1</a>
+    <h1 class="article-title" itemprop="name">
+      Java学习总结Day10
     </h1>
   
 
         
-        <a href="/2019/10/09/Java学习总结Day1/" class="archive-article-date">
-  	<time datetime="2019-10-08T17:30:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+        <a href="/2019/10/10/Java学习总结Day10/" class="archive-article-date">
+  	<time datetime="2019-10-10T15:55:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Java是严格区分大小写的语言，其标识符不能以数字开头</p>
-<p>变量名由多单词组成时，第一个单词的首字母小写，其后单词的首字母大写，俗称骆驼式命名法（也称驼峰命名法），如 myAge</p>
-<p>Java是一种强类型语言 float变量赋值时在数值后添加字母f 如：float height = 175.2f；</p>
-<p>类型转换只能小→大 且int不支持转换为char</p>
-        
-          <a class="article-more-a" href="/2019/10/09/Java学习总结Day1/#more">more >></a>
-        
+        <h2 id="String在Java"><a href="#String在Java" class="headerlink" title="String在Java~"></a>String在Java~</h2><pre><code>String作为对象创建后则不能被修改，它是不可变的，所谓的修改其实就是创建了新的对象，他们所指向的内存空间是不同的
+
+![avatar](http://img.mukewang.com/53d9f7d200010bb007780366.jpg)</code></pre><a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        // Java文件名</span><br><span class="line">		String fileName = &quot;HelloWorld.java&quot;; </span><br><span class="line">        // 邮箱</span><br><span class="line">		String email = &quot;laurenyang@imooc.com&quot;;</span><br><span class="line">		</span><br><span class="line">		// 判断.java文件名是否正确：合法的文件名应该以.java结尾</span><br><span class="line">        /*</span><br><span class="line">        参考步骤：</span><br><span class="line">        1、获取文件名中最后一次出现&quot;.&quot;号的位置</span><br><span class="line">        2、根据&quot;.&quot;号的位置，获取文件的后缀</span><br><span class="line">        3、判断&quot;.&quot;号位置及文件后缀名</span><br><span class="line">        */</span><br><span class="line">        //获取文件名中最后一次出现&quot;.&quot;号的位置</span><br><span class="line">		int index = fileName.indexOf(&quot;.&quot;);</span><br><span class="line">        </span><br><span class="line">        // 获取文件的后缀</span><br><span class="line">		String prefix = fileName.substring(index + 1);</span><br><span class="line">        </span><br><span class="line">		// 判断必须包含&quot;.&quot;号，且不能出现在首位，同时后缀名为&quot;java&quot;</span><br><span class="line">		if (  index != -1 &amp;&amp; index != 0 &amp;&amp; prefix.equals(&quot;java&quot;)) &#123;</span><br><span class="line">			System.out.println(&quot;Java文件名正确&quot;);</span><br><span class="line">		&#125; else &#123;</span><br><span class="line">			System.out.println(&quot;Java文件名无效&quot;);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">        // 判断邮箱格式是否正确：合法的邮箱名中至少要包含&quot;@&quot;, 并且&quot;@&quot;是在&quot;.&quot;之前</span><br><span class="line">         /*</span><br><span class="line">        参考步骤：</span><br><span class="line">        1、获取文件名中&quot;@&quot;符号的位置</span><br><span class="line">        2、获取邮箱中&quot;.&quot;号的位置</span><br><span class="line">        3、判断必须包含&quot;@&quot;符号，且&quot;@&quot;必须在&quot;.&quot;之前</span><br><span class="line">        */</span><br><span class="line">	    // 获取邮箱中&quot;@&quot;符号的位置</span><br><span class="line">		int index2 = email.indexOf(&quot;@&quot;);</span><br><span class="line">        </span><br><span class="line">        // 获取邮箱中&quot;.&quot;号的位置</span><br><span class="line">		int index3 = email.indexOf(&apos;.&apos;);</span><br><span class="line">        </span><br><span class="line">		// 判断必须包含&quot;@&quot;符号，且&quot;@&quot;必须在&quot;.&quot;之前</span><br><span class="line">		if (index2 != -1 &amp;&amp; index3 &gt; index2) &#123;</span><br><span class="line">			System.out.println(&quot;邮箱格式正确&quot;);</span><br><span class="line">		&#125; else &#123;</span><br><span class="line">			System.out.println(&quot;邮箱格式无效&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>那么，“==” 和 equals() 有什么区别呢？</p>
+<p>==: 判断两个字符串在内存中首地址是否相同，即判断是否是同一个字符串对象</p>
+<p>equals(): 比较存储在两个字符串对象中的内容是否一致</p>
+<p>PS：<br>字节是计算机存储信息的基本单位，1 个字节等于 8 位， gbk 编码中 1 个汉字字符存储需要 2 个字节，1 个英文字符存储需要 1 个字节。所以我们看到上面的程序运行结果中，<br>每个汉字对应两个字节值，如“学”对应 “-47 -89” ，而英文字母 “J” 对应 “74” 。同时，我们还发现汉字对应的字节值为负数，原因在于每个字节是 8 位，最大值不能超过 127，<br>而汉字转换为字节后超过 127，如果超过就会溢出，以负数的形式显示。（关于编码，我们在后面课程中会详细介绍，小小期待哦~~）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">		// 定义一个字符串</span><br><span class="line">		String s = &quot;aljlkdsflkjsadjfklhasdkjlflkajdflwoiudsafhaasdasd&quot;;</span><br><span class="line">        </span><br><span class="line">        // 出现次数</span><br><span class="line">		int num = 0;</span><br><span class="line">        </span><br><span class="line">         // 循环遍历每个字符，判断是否是字符 a ，如果是，累加次数</span><br><span class="line">		for (  int i = 0 ; i&lt;s.length();i++                        )</span><br><span class="line">		&#123;</span><br><span class="line">            // 获取每个字符，判断是否是字符a</span><br><span class="line">			if (  s.charAt(i) == &apos;a&apos;  ) &#123;</span><br><span class="line">                // 累加统计次数</span><br><span class="line">				num++; </span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(&quot;字符a出现的次数：&quot; + num);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>还真有大佬打赏？<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/xiong.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/xiong.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -203,7 +237,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java 学习总结</a>
         		</li>
       		
 		</ul>
@@ -212,16 +246,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/09/Java学习总结Day1/">康康好的 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/10/Java学习总结Day10/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/10/Java学习总结Day9/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java学习总结Day9</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -241,79 +334,14 @@
 
 
 
-
-  
-    <article id="post-hexo博客搭建的菜鸟流程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/25/hexo博客搭建的菜鸟流程/">hexo博客搭建的菜鸟流程</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/25/hexo博客搭建的菜鸟流程/" class="archive-article-date">
-  	<time datetime="2019-09-25T13:49:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h5 id="看图就算了，忘了截图"><a href="#看图就算了，忘了截图" class="headerlink" title="看图就算了，忘了截图"></a>看图就算了，忘了截图</h5><h3 id="hexo文章内容创建"><a href="#hexo文章内容创建" class="headerlink" title="hexo文章内容创建"></a>hexo文章内容创建</h3><p><code>hexo n（new）“文章标题”</code></p>
-<p>运行命令后会在source/_posts文件夹内创建该文章</p>
-<h3 id="hexo的编辑"><a href="#hexo的编辑" class="headerlink" title="hexo的编辑"></a>hexo的编辑</h3><p>编辑保存以后回退的blog文件夹<br>使用hexo clean命令清除<br>然后使用hexo g 生成文章<br>最后hexo s 启动该框架</p>
-        
-          <a class="article-more-a" href="/2019/09/25/hexo博客搭建的菜鸟流程/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/25/hexo博客搭建的菜鸟流程/">康康好的 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -336,8 +364,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
